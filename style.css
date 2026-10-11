@@ -60,17 +60,7 @@ body {
 }
 
 .brand-icon {
-    width: 55px;
-    height: 55px;
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 17px;
-    background: linear-gradient(135deg, #8d79ff, #6048db);
-    color: white;
-    font-size: 30px;
-    box-shadow: 0 8px 22px rgba(112, 87, 232, 0.28);
+   display: none;
 }
 
 .eyebrow {
