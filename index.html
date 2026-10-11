@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <section class="form-card">
+
+            <div class="form-header">
+                <div class="brand-icon">✦</div>
+
+                <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+
+                <h1>Create Your Account</h1>
+
+                <p class="subtitle">
+                    Join our community and create your personal profile.
+                </p>
+            </div>
+
+            <form id="registrationForm" novalidate>
+
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <small class="error-message" id="nameError"></small>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <small class="error-message" id="emailError"></small>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="At least 6 characters"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <small class="helper-text">
+                        Use at least 6 characters.
+                    </small>
+
+                    <small class="error-message" id="passwordError"></small>
+                </div>
+
+                <!-- Bio Field -->
+                <div class="form-group">
+                    <label for="bio">About You</label>
+
+                    <textarea
+                        id="bio"
+                        rows="4"
+                        maxlength="200"
+                        placeholder="Tell us a little about yourself..."
+                        required
+                    ></textarea>
+
+                    <div class="bio-footer">
+                        <small class="error-message" id="bioError"></small>
+
+                        <span id="charCounter">0 / 200 characters</span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitBtn" disabled>
+                    Create Account
+                    <span>→</span>
+                </button>
+
+                <p class="form-note">
+                    Please complete all fields correctly to continue.
+                </p>
+
+                <!-- Success Message -->
+                <div
+                    id="successMessage"
+                    class="success-message"
+                    role="status"
+                    aria-live="polite"
+                    hidden
+                ></div>
+
+            </form>
+
+            <div class="form-bottom">
+                <span class="bottom-line"></span>
+                <p>Simple. Secure. Personal.</p>
+                <span class="bottom-line"></span>
+            </div>
+
+        </section>
+
+        <footer>
+            Designed with care <span>✦</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
